@@ -1,9 +1,7 @@
 # cpp2024
 
-Задание №0 (вводное). Раздельная компиляция и пространства имен (namespaces)
+### Задание №0 (вводное). Раздельная компиляция и пространства имен (namespaces)
 
-
-Задача 0а
 Познакомьтесь с раздельной компиляцией и пространством имен в C++. В качестве примера используйте следующую программу:
 
 ```
@@ -29,6 +27,8 @@ namespace Module1
 	}
 }
 
+```
+```
 File module2.h:
 #include <string>
 
@@ -36,7 +36,8 @@ namespace Module2
 {
 	std::string getMyName();
 }
-
+```
+```
 File module2.cpp
 #include "module2.h"
 
@@ -48,7 +49,8 @@ namespace Module2
 		return name;
 	}
 }
-
+```
+```
 File main.cpp:
 #include "module1.h"
 #include "module2.h"
